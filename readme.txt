@@ -1,5 +1,4 @@
 === WP Random Quote ===
-
 Contributors: sabirmostofa
 Tags: quotes, random, widget, sidebar,  random quotes,quotations, shortcodes
 Requires at least: 2.8
@@ -7,7 +6,7 @@ Tested up to: 3.2.1
 Stable tag: trunk
 
 
-Display a Random Quote In your sidebar using widget or in any page using Shortcode
+Display a random quote provided by QOTD.org in your sidebar as a widget or in any page or post using a shortcode. For more information, see <a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
 
 == Description ==
 

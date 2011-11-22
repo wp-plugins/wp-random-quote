@@ -2,10 +2,10 @@
 /*
   Plugin Name: WP Random Quote
   Plugin URI: http://www.qotd.org
-  Description: Display Random quotes in your sidebar as widget or in any page/post using shortcode
+  Description: Display a random quote provided by QOTD.org in your sidebar as a widget or in any page or post using a shortcode. For more information, see <a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
   Version: 1.0
   Author: Sabirul Mostofa
-  Author URI: http:sabirul-mostofa.blogspot.com
+  Author URI: http//:sabirul-mostofa.blogspot.com
   License: GPLv2
  */
 
@@ -111,4 +111,3 @@ if (!class_exists('Random_Quote')):
 //instantiating the plugin class
     $random_quote = new Random_Quote();
 endif;
-

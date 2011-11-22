@@ -11,7 +11,7 @@ class Random_Quote_Widget extends WP_Widget {
     function form($instance) {
         // outputs the options form on admin
         $defs = array(
-            'title' => '',
+            'title' => 'A Quote from quotd.org',
             'interval' => 'hourly',
             'font-size'=>'12px'
         );
@@ -60,7 +60,7 @@ class Random_Quote_Widget extends WP_Widget {
             $quotes = get_option('wprq_random_quotes');
             if (!$quotes)
                 $quotes = $random_quote->cron_func();
-            $random_quote = $quotes[rand(0, count($quotes))];
+            $random_quote = $quotes[rand(0, (count($quotes)-1  ))];
             ?>
         <div id="wp_random_quote" style="font-size:<?php echo $instance['font-size'] ?>"><?php echo $random_quote ?></div>
         <?php
