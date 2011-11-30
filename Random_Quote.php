@@ -2,7 +2,7 @@
 /*
   Plugin Name: WP Random Quote
   Plugin URI: http://www.qotd.org
-  Description: Display a random quote provided by QOTD.org in your sidebar as a widget or in any page or post using a shortcode. For more information, see <a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
+  Description: Display a random quote provided by QOTD.org in your sidebar as a widget or in a page/post using  shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
   Version: 1.0
   Author: Sabirul Mostofa
   Author URI: http//:sabirul-mostofa.blogspot.com
@@ -38,6 +38,13 @@ if (!class_exists('Random_Quote')):
             add_action('wprq_cron_hook', array($this, 'cron_func'));
             add_shortcode('random-quote', array($this, 'random_quote_shortcode'));
             add_action('admin_menu', array($this, 'CreateMenu'));
+            register_deactivation_hook(__FILE__, 'myplugin_deactivate');
+        }
+
+        //Clear psudo cron hook
+        function myplugin_deactivate() {
+            if (wp_get_schedule('wprq_cron_hook'))
+                wp_clear_scheduled_hook('wprq_cron_hook');
         }
 
         function cron_func() {
