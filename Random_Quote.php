@@ -50,6 +50,7 @@ if (!class_exists('Random_Quote')):
         function cron_func() {
             // updating the quotes
             $prev = get_option('wprq_random_quotes');
+            $existed_before = $prev;
             if (!$prev)
                 $prev = array();
             $quotes = array();
@@ -62,11 +63,19 @@ if (!class_exists('Random_Quote')):
                     $quote = trim($matches[1]);
                     if (!in_array($quote, $quotes) && !in_array($quote, $prev)) {
                         $quotes[] = $quote;
-                        if (++$count == 10)
+
+                        $count++;
+                        if ($existed_before) {
+                            if ($count == 1)
+                                break;
+                        }else
+                        if ($count == 10)
                             break;
                     }
                 endif;
             endfor;
+            $quotes = array_merge($prev,$quotes);
+            if(count($quotes) ==11)array_shift ($quotes);
             update_option('wprq_random_quotes', $quotes);
             return $quotes;
         }
