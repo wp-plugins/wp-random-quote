@@ -3,7 +3,7 @@
   Plugin Name: WP Random Quote
   Plugin URI: http://www.qotd.org
   Description: Display a random quote provided by QOTD.org in your sidebar as a widget or in a page/post using  shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
-  Version: 1.0
+  Version: 1.0.1
   Author: Sabirul Mostofa
   Author URI: http//:sabirul-mostofa.blogspot.com
   License: GPLv2
