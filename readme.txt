@@ -2,7 +2,7 @@
 Contributors: sabirmostofa, vanhorn
 Tags: quotes, random, widget, sidebar,  random quotes,quotations, shortcodes
 Requires at least: 2.8
-Tested up to: 3.2.1
+Tested up to: 3.3
 Stable tag: trunk
 
 
