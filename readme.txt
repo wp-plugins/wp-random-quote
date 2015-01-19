@@ -1,23 +1,25 @@
 === WP Random Quote ===
 Contributors: sabirmostofa, vanhorn
-Tags: quotes, random, widget, sidebar,  random quotes,quotations, shortcodes
+Tags: quotes, random, widget, sidebar, random quotes, quotations, shortcodes
+License: GPLv2
 Requires at least: 2.8
-Tested up to: 3.3
-Stable tag: trunk
+Tested up to: 4.1
+Stable tag: 1.0.3
 
 
-Display a random quote provided by QOTD.org in your sidebar as a widget or in page/post using  shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
+Display a random quote provided by QOTD.org in your sidebar as a widget or in page/post using a shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
 
 == Description ==
 
-Display a random quote provided by QOTD.org in your sidebar as a widget or in a page/post using  shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
+Display a random quote provided by QOTD.org in your sidebar as a widget or in a page/post using a shortcode. For more info:<a href="http://www.qotd.org/wp-plugin.html">www.qotd.org/wp-plugin.html</a>
 
 The main features:
 
-* As many **widgets** as you need, Each quotation font sizes are configurable
+* As many **widgets** as you need
+* Font sizes can be configured
 * Optional **automatic rotation** of the quotes 
 
-* **Shortcodes** that can be used to add one quote or series of quotes to your posts and pages. The shortcodes come with a set of individual options as well and, if needed, they can be extended to apply everywhere on the blog, allowing random words for the tagline, the category names, the post titles etc.
+* **Shortcodes** can be used to add one quote or series of quotes to your posts and pages. The shortcodes come with a set of individual options as well and, if needed, they can be extended to apply everywhere on the blog, allowing random words for the tagline, the category names, the post titles etc.
 
 
 
@@ -32,3 +34,4 @@ The main features:
 
 == Changelog ==
 
+1.0.2 - Corrected some typos, no functional change made or needed
