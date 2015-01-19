@@ -1,5 +1,6 @@
 === WP Random Quote ===
 Contributors: sabirmostofa, vanhorn
+Donate link: http:www.qotd.org/donate.html
 Tags: quotes, random, widget, sidebar, random quotes, quotations, shortcodes
 License: GPLv2
 Requires at least: 2.8
@@ -35,3 +36,13 @@ The main features:
 == Changelog ==
 
 1.0.2 - Corrected some typos, no functional change made or needed
+1.0.3 - Caught a couple more
+
+== Frequently Asked Questions ==
+
+= What kind of quotes will be displayed? =
+The Quotes of the Day database has over 85,000 quotes from over 8,000 authors covering every imaginable subject. 
+
+When a quote is added that might be considered offensive, it is flagged as "inapt" in the database. The function that selects quotes for use in the plugin randomly chooses quotes less than 150 characters in length that are not flagged.
+
+If you encounter a quote that you deem offensive, please send a message to quotemaster@qotd.org with the text of that quote and the reason you feel it should be flagged if it isn't obvious.
